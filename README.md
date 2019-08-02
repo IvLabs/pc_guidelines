@@ -6,6 +6,7 @@
 - To use a GPU, you must first book it at this [this address](http://tiny.cc/IvLabsGPUs), you will find some rules on how to do it in the spreadsheet. If you have any questions, please ask!
 - Use at most one GPU at a time. In case you need more, use the Discord #gpus channel to ask for permission and coordinate with the other users.
 - By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
+- After completing your task make sure you release the GPU memory (if not done automatically). Use `nvidia-smi` to check for processes and kill them using `kill <pid>`. 
 
 #### How to setup your enviroment
 - You must use conda to create an enviroment if you have custom dependencies for your project. DO **NOT** install conflicting packages in the base enviroment.
