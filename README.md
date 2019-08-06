@@ -29,6 +29,12 @@
      - In a local terminal, use `ssh -f -N -L localhost:<allocated_port>:localhost:<local_port> username@ip_address` to forward the `allocated_port` to your `local_port`.
      - Note that `local_port` and `allocated_port` are 4-digit numbers. Also, if either of the ports is already in use, the above command may fail.
      - Open the browser in your local PC and type URL `localhost:<local_port>`.
+     - For installing anaconda enviroments in jupyter use the following commands
+     ```
+     source activate myenv
+     python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+     ``` 
+     for more info refer [link](https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook)
 - PyCharm or Atom or other editors :
      - There are ways to configure a remote server on such editors. But it is tedious to find instructions for each and everyone.
 - Vim / Nano :
