@@ -4,9 +4,11 @@
 - Keep usage of resources under control. For RAM and cores usage : `htop` and for GPU usage : `nvidia-smi`
 - After running your code (in case it is not stable), make sure that resources being used are under control (using above commands).
 - To use a GPU, you must first book it at this [this address](http://tiny.cc/IvLabsGPUs), you will find some rules on how to do it in the spreadsheet. If you have any questions, please ask!
+- In case you have to login using the monitor in lab, then remember to log out before leaving. This is necessary since logging in at the monitor will take up GPU memory which is not released even when the monitor is switched off.
 - Use at most one GPU at a time. In case you need more, use the Discord #gpus channel to ask for permission and coordinate with the other users.
 - By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
-- After completing your task make sure you release the GPU memory (if not done automatically). Use `nvidia-smi` to check for processes and kill them using `kill <pid>`. 
+- After completing your task make sure you release the GPU memory (if not done automatically). Use `nvidia-smi` to look at running processes and kill them using `kill <pid>`.
+- To determine the owner of process `<pid>`, use `ps -o user= -p <pid>` to find the username of the owner. If GPU is not booked, you can kill the process directly, otherwise contact the user or admin if you want to share the resources.
 
 #### How to setup your enviroment
 - You must use conda to create an enviroment if you have custom dependencies for your project. DO **NOT** install conflicting packages in the base enviroment.
