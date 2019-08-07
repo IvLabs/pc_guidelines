@@ -26,7 +26,7 @@
 #### Writing code over ssh
 - Jupyter Lab / Notebook :
      - Start Jupyter Notebook / Lab using `jupyter-lab --port=<allocated_port> --no-browser` after logging into your account.
-     - In a local terminal, use `ssh -f -N -L localhost:<allocated_port>:localhost:<local_port> username@ip_address` to forward the `allocated_port` to your `local_port`.
+     - In a local terminal, use `ssh -f -N -L localhost:<local_port>:localhost:<allocated_port> username@ip_address` to forward the `allocated_port` to your `local_port`.
      - Note that `local_port` and `allocated_port` are 4-digit numbers. Also, if either of the ports is already in use, the above command may fail.
      - Open the browser in your local PC and type URL `localhost:<local_port>`.
      - For installing anaconda enviroments in jupyter use the following commands
