@@ -35,10 +35,14 @@
      python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
      ``` 
      for more info refer [link](https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook)
+- Visual Studio Code : 
+     - This is one of the easiest ways to remotely write code.
+     - Just follow the instructions given [here](https://code.visualstudio.com/docs/remote/ssh) and you can setup VS Code to connect to the remote server and edit any files there. 
+     - Using key-based authentication, you can configure both your laptop terminal and VS Code to login without password. Instructions for that are linked in the previous link.
 - PyCharm or Atom or other editors :
-     - There are ways to configure a remote server on such editors. But it is tedious to find instructions for each and everyone.
+     - There may be ways to configure a remote server on these editors too. If someone finds the link to instructions for this, then you can open a pull request linking it here or contact the admins to add it here.
 - Vim / Nano :
-     - `vim` and `nano` are terminal-based text editors which can also be used.
+     - `vim` and `nano` are terminal-based text editors which can also be used for quick access.
      
 #### How to launch experiments
 - Use `tmux` to keep the session active even when you are disconnected from the server.
