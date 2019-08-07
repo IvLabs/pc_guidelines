@@ -20,7 +20,7 @@
           conda create -n <name_of_your_enviroment> <package1> <package2>
           ``` 
           e.g. for creating enviroment with `pip` and `sklearn` packages the command would be: `conda create -n <name_of_your_enviroment> pip sklearn` *Note: You can install `pip` as a conda package and then use it to install other packages as well*
-     - You can use `conda` to install packages: `conda install <package_name>`, if the package is on custom channel use: `conda install -c <channel_name> <package_name>`
+     - **Make sure you are within your own environment** and then you can use `conda` to install packages: `conda install <package_name>`, if the package is on custom channel use: `conda install -c <channel_name> <package_name>`
      - For more information on how to use conda please refer to the [conda official documentation](https://docs.conda.io/en/latest/).
 
 #### Writing code over ssh
