@@ -44,6 +44,12 @@
 - Vim / Nano :
      - `vim` and `nano` are terminal-based text editors which can also be used for quick access.
      
+#### Using GUI applications over ssh with X11 forwarding
+- The requirements for the server side are already setup by the admin.
+- On your own Ubuntu machine, while logging in, use `ssh -X username@ip_address`.
+- To make X11 forwarding default in your machine, add `ForwardX11 yes` in the `~/.ssh/config` file in your local machine.
+- Then, any GUI application can be started on the remote server (using the usual commands) and the display will be shown on your local machine.
+
 #### How to launch experiments
 - Use `tmux` to keep the session active even when you are disconnected from the server.
 If you haven't used it before, read [this tutorial](https://linuxize.com/post/getting-started-with-tmux/) to learn all the basics and [this cheatsheet](https://gist.github.com/MohamedAlaa/2961058) for some advanced functionalities.
