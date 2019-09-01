@@ -1,4 +1,15 @@
 ### IvLabs PC and GPUs Usage Guidelines 
+      _____     _           _         
+     |_   _|   | |         | |        
+       | |_   _| |     __ _| |__  ___ 
+       | \ \ / / |    / _' | '_ \/ __|
+      _| |\ V /| |___| (_| | |_) \__ \
+      \___/\_/ \_____/\__,_|_.__/|___/
+
+Welcome to the IvLabs PC. If you are on this page, chances are you have just been given access to the PC.
+Follow the rules for using this GPU server at [https://tiny.cc/IvLabs_PC_Rules](https://tiny.cc/IvLabs_PC_Rules).
+Before using any GPU, you must book it in [http://tiny.cc/IvLabsGPUs](http://tiny.cc/IvLabsGPUs).
+If you don't understand how to use things, contact the admin on the Discord channel #gpus.
 
 #### GPUs and other resources
 - Keep usage of resources under control. For RAM and cores usage : `htop` and for GPU usage : `nvidia-smi`
