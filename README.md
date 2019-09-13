@@ -18,6 +18,7 @@ If you don't understand how to use things, contact the admin on the Discord chan
 - In case you have to login using the monitor in lab, then remember to log out before leaving. This is necessary since logging in at the monitor will take up GPU memory which is not released even when the monitor is switched off.
 - Use at most one GPU at a time. In case you need more, use the Discord #gpus channel to ask for permission and coordinate with the other users.
 - By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
+- In PyTorch, use `torch.cuda.set_device(id)` to set the proper GPU. Replace `id` with `0` for GPU0 and so on.
 - After completing your task make sure you release the GPU memory (if not done automatically). Use `nvidia-smi` to look at running processes and kill them using `kill <pid>`.
 - To determine the owner of process `<pid>`, use `ps -o user= -p <pid>` to find the username of the owner. If GPU is not booked, you can kill the process directly, otherwise contact the user or admin if you want to share the resources.
 
