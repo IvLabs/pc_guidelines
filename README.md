@@ -7,7 +7,7 @@
       \___/\_/ \_____/\__,_|_.__/|___/
 
 Welcome to the IvLabs PC. If you are on this page, chances are you have just been given access to the PC.
-Follow the rules for using this GPU server at [https://tiny.cc/IvLabs_PC_Rules](https://tiny.cc/IvLabs_PC_Rules).
+Follow the rules for using this PC at [https://tiny.cc/IvLabs_PC_Rules](https://tiny.cc/IvLabs_PC_Rules).
 Before using any GPU, you must book it in [http://tiny.cc/IvLabsGPUs](http://tiny.cc/IvLabsGPUs).
 If you don't understand how to use things, contact the admin on the Discord channel #gpus.
 
@@ -17,8 +17,8 @@ If you don't understand how to use things, contact the admin on the Discord chan
 - To use a GPU, you must first book it at this [this address](http://tiny.cc/IvLabsGPUs), you will find some rules on how to do it in the spreadsheet. If you have any questions, please ask!
 - In case you have to login using the monitor in lab, then remember to log out before leaving. This is necessary since logging in at the monitor will take up GPU memory which is not released even when the monitor is switched off.
 - Use at most one GPU at a time. In case you need more, use the Discord #gpus channel to ask for permission and coordinate with the other users.
-- By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
-- In PyTorch, use `torch.cuda.set_device(id)` to set the proper GPU. Replace `id` with `0` for GPU0 and so on.
+     - By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
+     - In PyTorch, use `torch.cuda.set_device(id)` to set the proper GPU. Replace `id` with `0` for GPU0 and so on.
 - After completing your task make sure you release the GPU memory (if not done automatically). Use `nvidia-smi` to look at running processes and kill them using `kill <pid>`.
 - To determine the owner of process `<pid>`, use `ps -o user= -p <pid>` to find the username of the owner. If GPU is not booked, you can kill the process directly, otherwise contact the user or admin if you want to share the resources.
 
@@ -26,7 +26,7 @@ If you don't understand how to use things, contact the admin on the Discord chan
 - You must use conda to create an enviroment if you have custom dependencies for your project. DO **NOT** install conflicting packages in the base enviroment.
 - Useful conda commands are listed below 
      - To create an enviroment: `conda create -n <name_of_your_enviroment>` 
-     - Enviroment with custom Python version: `conda create -n <name_of_your_enviroment> python=X.X` where `X.X` represents the python version you want to install. For example command for creating an enviroment with Python 3.5 would look like: `conda create -n <name_of_your_enviroment> python=3.5`
+     - Enviroment with custom Python version: `conda create -n <name_of_your_enviroment> python=X.X` where `X.X` represents the Python version you want to install. For example, the command for creating an enviroment with Python 3.5 would look like: `conda create -n <name_of_your_enviroment> python=3.5`
      - To install custom packages while creating your envrioment you can just list them out like this: 
           ```
           conda create -n <name_of_your_enviroment> <package1> <package2>
