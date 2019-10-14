@@ -62,9 +62,19 @@ If you don't understand how to use things, contact the admin on the Discord chan
 - To make X11 forwarding default in your machine, add `ForwardX11 yes` in the `~/.ssh/config` file in your local machine.
 - Then, any GUI application can be started on the remote server (using the usual commands) and the display will be shown on your local machine.
 
+#### Using ROS and ROS based applications
+- ROS has already been installed system-wide. However, ROS environment variables will not be sourced by default in your bash terminals (since `source /opt/ros/kinetic/setup.bash` hasn't been added to the `.bashrc` file of the root user). 
+- Thus, to use ROS, you must do `source /opt/ros/kinetic/setup.bash` in each terminal that you wish to use for ROS related commands. To make it default to your user (NOT the root user), you may add this command to your user's `.bashrc` file (this file is present in your home folder. If you're unsure, you can contact the admin on #gpus channel on Discord).
+- Note that there is no need to use the monitor in the lab for ROS based applications. You can do your work through ssh, and follow the X11 forwarding instructions above to get GUI applications working through ssh. 
+- **WARNING**: If you add the source command to your `.bashrc` file, then you risk conflicts between your dependencies and dependencies in your `conda` or other environments (if any). So, if you face conflicts in (say) OpenCV (this is the most common conflict), then be sure to check your `.bashrc` file.
+- **WARNING**: Your simulations may lag when any training is going on (since CPU is also used during training). So, check if training is going on using `watch nvidia-smi` and coordinate with other users on the #gpus channel on Discord.
+
+**Instruction to current and future Admins**: Never put the source command in the root user's `.bashrc` file. It will create conflicts for other users' environments who don't use ROS.
+
 #### How to launch experiments
 - Use `tmux` to keep the session active even when you are disconnected from the server.
 If you haven't used it before, read [this tutorial](https://linuxize.com/post/getting-started-with-tmux/) to learn all the basics and [this cheatsheet](https://gist.github.com/MohamedAlaa/2961058) for some advanced functionalities.
 - Run the program or start the Jupyter Notebook / Lab within the tmux session.
 - Use the `watch nvidia-smi` command to monitor GPU usage.
 - Use `htop` to keep resources under control.
+- If other users are already using for training or running simulations or other tasks, then coordinate with them on the #gpus channel on Discord. 
