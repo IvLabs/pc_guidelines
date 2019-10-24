@@ -20,7 +20,7 @@ If you don't understand how to use things, contact the admin on the Discord chan
      - By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
      - In PyTorch, use `torch.cuda.set_device(id)` to set the proper GPU. Replace `id` with `0` for GPU0 and so on.
 - After completing your task make sure you release the GPU memory (if not done automatically). Use `nvidia-smi` to look at running processes and kill them using `kill <pid>`.
-- To determine the owner of process `<pid>`, use `ps -o user= -p <pid>` to find the username of the owner. If GPU is not booked, you can kill the process directly, otherwise contact the user or admin if you want to share the resources.
+- To determine the owner of process `<pid>`, use `ps -o user= -p <pid>` to find the username of the owner. If GPU is not booked, use the #gpus channel on Discord to coordinate with the user or request the admin to kill the process. If unbooked GPU user does not respond quickly, then admin must kill the process.
 
 #### How to setup your enviroment
 - You must use conda to create an enviroment if you have custom dependencies for your project. DO **NOT** install conflicting packages in the base enviroment.
