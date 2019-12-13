@@ -36,24 +36,26 @@ If you don't understand how to use things, contact the admin on the Discord chan
      - For more information on how to use conda please refer to the [conda official documentation](https://docs.conda.io/en/latest/).
 
 #### Writing code over ssh
-- Jupyter Lab / Notebook :
+- **Jupyter Lab / Notebook** :
      - Start Jupyter Notebook / Lab using `jupyter-lab --port=<allocated_port> --no-browser` after logging into your account.
      - In a local terminal, use `ssh -f -N -L localhost:<local_port>:localhost:<allocated_port> username@ip_address` to forward the `allocated_port` to your `local_port`.
      - Note that `local_port` and `allocated_port` are 4-digit numbers. Also, if either of the ports is already in use, the above command may fail.
      - Open the browser in your local PC and type URL `localhost:<local_port>`.
-     - For installing anaconda enviroments in jupyter use the following commands
+     - **Example**: Suppose you want to start `jupyter-lab` with port `6767` on the remote PC, then use `jupyter-lab --port=6767 --no-browser`. This will start a Jupyter Lab at port `6767` (this is the `allocated_port`). Now, suppose you want to access it in your local PC at port `8988` (this is the `local_port`), then use `ssh -f -N -L localhost:8988:localhost:6767 username@ip_address`. Note that this is called port forwarding (forwarding port from remote to local PC). Then, in your local browser, use the URL `localhost:8988`.
+     - Note: Same commands apply for Jupyter Notebook. Just replace `jupyter-lab` by `jupyter-notebook`.
+     - For installing Anaconda enviroments in Jupyter, use the following commands
      ```
      source activate myenv
      python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
      ``` 
      for more info refer [link](https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook)
-- Visual Studio Code : 
+- **Visual Studio Code** : 
      - This is one of the easiest ways to remotely write code.
      - Just follow the instructions given [here](https://code.visualstudio.com/docs/remote/ssh) and you can setup VS Code to connect to the remote server and edit any files there. 
      - Using key-based authentication, you can configure both your laptop terminal and VS Code to login without password. Instructions for that are linked in the previous link.
-- PyCharm or Atom or other editors :
+- **PyCharm or Atom or other editors** :
      - There may be ways to configure a remote server on these editors too. If someone finds the link to instructions for this, then you can open a pull request linking it here or contact the admins to add it here.
-- Vim / Nano :
+- **Vim / Nano** :
      - `vim` and `nano` are terminal-based text editors which can also be used for quick access.
      
 #### Using GUI applications over ssh with X11 forwarding
