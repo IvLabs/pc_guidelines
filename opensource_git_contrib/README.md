@@ -13,7 +13,7 @@
 6. If the owner finds your changes correct, he will merge it with his original repo.
 7. Congratulations! You just contributed to the original repo.
 
-Resources:
+Resources: [Link](https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940)
 
 ## Creating a new contribution to the sane repo
 1. Delete the old fork (if the master is ahead of your fork).
