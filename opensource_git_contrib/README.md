@@ -22,4 +22,4 @@ Resources: [Link](https://codeburst.io/a-step-by-step-guide-to-making-your-first
 4. Thats it!
 
 This is an oversimplified way of contributing
-For more advanced usage we can use branches and commands like adding upstream url and doing `git fetch`. You can google it learn for there itself.
+For more advanced usage we can use branches and commands like adding upstream url and doing `git fetch`. Please read online about these concepts.
