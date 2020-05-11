@@ -18,8 +18,8 @@ Resources: [Link](https://codeburst.io/a-step-by-step-guide-to-making-your-first
 ## Creating a new contribution to the same repo
 1. Delete the old fork (if the master is ahead of your fork).
 2. Create a new fork and do all changes there.
-3. Create a Pull request and repeat above steps.
+3. Create a Pull Request and repeat above steps.
 4. Thats it!
 
 This is an oversimplified way of contributing
-For more advanced usage we can use branches and commands like adding upstream url and doing `git fetch`. Please read online about these concepts. A great explanation can be found [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962) and [here](https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository). It's a must read for everyone.
+For more advanced usage we can use branches and commands like adding upstream url and doing `git fetch`. Please read online about these concepts. Great explanations can be found [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962) and [here](https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository). They're a must read for everyone.
