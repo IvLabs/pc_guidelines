@@ -15,7 +15,7 @@
 
 Resources: [Link](https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940)
 
-## Creating a new contribution to the sane repo
+## Creating a new contribution to the same repo
 1. Delete the old fork (if the master is ahead of your fork).
 2. Create a new fork and do all changes there.
 3. Create a Pull request and repeat above steps.
