@@ -21,5 +21,10 @@ Resources: [Link](https://codeburst.io/a-step-by-step-guide-to-making-your-first
 3. Create a Pull Request and repeat above steps.
 4. Thats it!
 
+## Courses
+1. [Introduction to Git and GitHub](https://www.coursera.org/learn/introduction-git-github#syllabus) 
+This is a highly recommended course for anyone new to Git. It also covers a few advance topics. 
+
+
 This is an oversimplified way of contributing
 For more advanced usage we can use branches and commands like adding upstream url and doing `git fetch`. Please read online about these concepts. Some great explanations can be found [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962) and [here](https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository). They're a must read for everyone.
