@@ -7,14 +7,14 @@
       \___/\_/ \_____/\__,_|_.__/|___/
 
 Welcome to the IvLabs PC. If you are on this page, chances are you have just been given access to the PC.
-Follow the rules for using this PC at [https://tiny.cc/IvLabs_PC_Rules](https://tiny.cc/IvLabs_PC_Rules).
-Before using any GPU, you must book it in [http://tiny.cc/IvLabsGPUs](http://tiny.cc/IvLabsGPUs).
-If you don't understand how to use things, contact the admin on the Discord channel #gpus.
+Follow the rules for using this PC at [Lab New PC instructions](https://github.com/IvLabs/pc_guidelines).
+Before using any GPU, you must book it in [Lab new PC usage record](https://github.com/IvLabs/pc_guidelines).
+If you don't understand how to use things, contact the admin on the Discord channel #pc.
 
 #### GPUs and other resources
-- Keep usage of resources under control. For RAM and cores usage : `htop` and for GPU usage : `nvidia-smi`
+- Keep usage of resources under control. For RAM and cores usage : `htop` and for GPU usage : `nvidia-smi` or `gpustat`
 - After running your code (in case it is not stable), make sure that resources being used are under control (using above commands).
-- To use a GPU, you must first book it at this [this address](http://tiny.cc/IvLabsGPUs), you will find some rules on how to do it in the spreadsheet. If you have any questions, please ask!
+- To use a GPU, you must first book it at this google sheet provided, you will find some rules on how to do it in the spreadsheet. If you have any questions, please ask!
 - In case you have to login using the monitor in lab, then remember to log out before leaving. This is necessary since logging in at the monitor will take up GPU memory which is not released even when the monitor is switched off.
 - Use at most one GPU at a time. In case you need more, use the Discord #gpus channel to ask for permission and coordinate with the other users.
      - By default, TensorFlow uses all GPUs available. Set up your experiments to use the correct GPU.
@@ -77,6 +77,6 @@ If you don't understand how to use things, contact the admin on the Discord chan
 - Use `tmux` to keep the session active even when you are disconnected from the server.
 If you haven't used it before, read [this tutorial](https://linuxize.com/post/getting-started-with-tmux/) to learn all the basics and [this cheatsheet](https://gist.github.com/MohamedAlaa/2961058) for some advanced functionalities.
 - Run the program or start the Jupyter Notebook / Lab within the tmux session.
-- Use the `watch nvidia-smi` command to monitor GPU usage.
+- Use the `watch nvidia-smi` or `gpustat --watch` command to monitor GPU usage.
 - Use `htop` to keep resources under control.
-- If other users are already using for training or running simulations or other tasks, then coordinate with them on the #gpus channel on Discord. 
+- If other users are already using for training or running simulations or other tasks, then coordinate with them on the #pc channel on Discord. 
